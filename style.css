@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  :root{
+    font-size: 62.5%;
+    --ff-heading: 'Staatliches';
+    --ff-texting: 'Palanquin';
+  }
+
+  body{
+   background: #EFF1FF;
+  }
+
+  header{
+    background: #8E9AAF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 27.9rem;
+  }
+  header img{
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    max-width: 100%;
+    height: auto;
+  }
+  
+ h1{
+    color: #FFF;
+    font-size: 40px;
+    font-family:var(--ff-heading);
+    line-height: 34px;
+    letter-spacing: 2px;
+    background: #CBC0D3;
+    height: 4.9rem;
+    width: 100%;
+    text-align: center;
+    padding-top: 8px;
+ }
+ main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #EFF1FF;
+ }
+ .pe{
+    padding: 1.4rem 3.6rem 6.3rem ;
+    background: #EFF1FF;
+    margin-top: 1.4rem ;
+   
+ }
+
+ 
+p{
+    color: #23053A;
+    text-align: center;
+    font-size: 13px;
+    font-family:var(--ff-texting);
+    line-height: 2.3rem;
+    
+ }
+ .div-cards{
+    display: grid;
+    gap: 3.2rem;
+ }
+ .card{
+    position: relative;
+
+ }
+ h2{
+    color: #4A4E69;
+    font-size: 20px;
+    font-family: var(--ff-heading);
+    line-height: 34px;
+    letter-spacing: 1px;
+     position: absolute;
+    top: 1.6rem;
+    right: 1.6rem;
+    border-radius: 20px;
+    width: 11.2rem;
+    height: 3.5rem;
+    background: #FEEAFA;
+    padding: 1px 2.3rem;
+ }
+ 
+ .card img{
+    width: 100%;
+    height: auto;
+ }
+
+ .card img{
+    animation: downtop 700ms;
+    transition-property: transform;
+    transition: 300ms;
+    transition-timing-function: ease-in-out;
+ }
+ .card h2{
+    animation: topdown 700ms;
+ }
+ .card img:hover{
+    transform: scale(1.1);
+ }
+ @keyframes topdown {
+    0%{
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+    100%{
+      opacity: 1;
+      transform: translateY(0);
+    }
+      }
+    @keyframes downtop{
+      0%{
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      100%{
+        opacity: 1;
+        transform: translateY(0);
+      }
+   }
+   
+  @media (min-width:900px){
+
+   body{
+      display: flex;
+   }
+   .fordesk{
+      max-width: 37.7rem;
+      max-height: 100%;
+      background: #8E9AAF
+   }
+   .pe{
+      background: #8E9AAF; 
+   }
+   p{
+      color: #FFF;
+      font-size: 2.4rem;
+      font-family: 'Roboto';
+      line-height: 2.7rem;
+   }
+   .div-cards{
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      
+   }
+   main{
+      margin: 6.4rem 8.1rem 5.1rem 9.8rem;
+      }
+
+    }
